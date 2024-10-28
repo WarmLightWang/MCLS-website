@@ -1,0 +1,44 @@
+/* Registration page specific styles */
+.registration-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.download-section {
+    margin: 20px 0;
+}
+
+.download-button {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #45a049;
+}
+
+.file-info {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}

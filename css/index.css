@@ -1,0 +1,85 @@
+/* The header and main styles */
+html, body{
+    height: 100%;
+}
+body {
+    margin: 0px 30px;
+    font-family: Arial, sans-serif;
+    background-color: #F9F5EC;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    top: 0;
+    background-color:#E9F5DB;
+    z-index: 1000;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.text-animation {
+    animation: slideIn 16s linear infinite;
+    white-space: nowrap; 
+    height: fit-content;
+    padding: 5px 0 5px 0;
+    color: #06b2f7;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+        opacity: 1; /* Start invisible */
+    }
+    10% {
+        opacity: 1; /* Fade in */
+    }
+    90% {
+         /* Stay visible */
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%); /* End off-screen to the left */
+        opacity: 1; /* Fade out */
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    font-size: large;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+section {
+    display: none;
+    padding: 20px;
+}
+
+.about_section {
+    display: block;
+}
+.content{
+    flex: 1;
+}
+
+.footer {
+    color: black;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}

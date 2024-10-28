@@ -1,0 +1,106 @@
+/* About Us page specific styles */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    object-fit: cover;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.slider-nav button {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider-nav button.active {
+    background-color: #fff;
+    transform: scale(1.2);
+}
+
+.slider-nav button:hover {
+    transform: scale(1.2);
+}
+ul {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: large;
+}
+
+.aboutUs_section {
+    display: block;
+    padding: 0px 10px;
+}
+
+.about_subtitle{
+    font-size:medium; 
+    text-align:center;
+    color:red;
+    padding: 10px 0;
+}
+.policy_subtitle{
+    color: red;
+    font-weight: bold;
+}
+.guidelines_subtitle{
+    color: red;
+    font-weight: bold;
+}
+
+p a{
+    color: blue;
+}
+
+.numbered-item {
+    display: flex; 
+    align-items: flex-start;  
+}
+
+.number1 {
+    margin-right: 6px;
+}
+.number2 {
+    margin-right: 6px; 
+    text-indent: 50px;
+}
+
+.numbered-item p {
+    margin: 0;
+}
+.guide_bullet{
+    list-style-type: square;
+    padding-left: 50px;
+}
+
+ol a{
+    color:blue
+}
