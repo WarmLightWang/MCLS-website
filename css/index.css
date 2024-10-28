@@ -1,6 +1,8 @@
 /* The header and main styles */
 html, body{
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 body {
     margin: 0px 30px;
@@ -20,12 +22,26 @@ header {
     border-bottom: 1px solid #ccc;
 }
 
+.logo_language {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+.logo-container img {
+    height: 60px;
+    width: auto;
+    max-width: 100%;
+}
+
 .text-animation {
     animation: slideIn 16s linear infinite;
     white-space: nowrap; 
     height: fit-content;
-    padding: 5px 0 5px 0;
+    padding: 10px 0;
     color: #06b2f7;
+    font-size: 16px;
+    overflow: hidden;
 }
 @keyframes slideIn {
     0% {
@@ -47,6 +63,7 @@ header {
 
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 5px 0;
 }
@@ -54,20 +71,29 @@ nav {
 nav a {
     text-decoration: none;
     color: #333;
-    padding: 5px 10px;
+    padding: 5px 15px;
+    margin: 5px;
     cursor: pointer;
     font-weight: bold;
     font-size: large;
-    font-size: large;
+    white-space: nowrap;
 }
 
 nav a:hover {
     background-color: #f0f0f0;
 }
 
-section {
-    display: none;
-    padding: 20px;
+.content {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .about_section {
@@ -82,4 +108,47 @@ section {
     text-align: center;
     padding: 10px;
     width: 100%;
+    margin-top: auto;
+}
+
+/* Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    nav {
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    nav a {
+        flex: 0 1 calc(50% - 20px);
+        text-align: center;
+    }
+    
+    .text-animation {
+        font-size: 20px;
+    }
+}
+
+/* Small laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .content {
+        padding: 0 20px;
+    }
+    
+    nav a {
+        padding: 8px 15px;
+    }
+}
+
+/* Larger screens */
+@media screen and (min-width: 1025px) {
+    .content {
+        padding: 0 30px;
+    }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-container img {
+        transform: scale(0.8);
+    }
 }
