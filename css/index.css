@@ -136,20 +136,20 @@ nav a:hover {
 /* Small phones */
 @media screen and (max-width: 320px) {
     :root {
-        --text-base: 14px;
-        --text-scale-ratio: 1.1;
+        --text-base: 13px;
+        --text-scale-ratio: 1;
     }
 
     .logo-container img {
-        height: 40px;
+        height: 30px;
     }
 
     nav, #aboutSection nav {
-        gap: 10px;
+        gap: 8px;
     }
 
     nav a, #aboutSection nav a {
-        padding: 6px 8px;
+        padding: 5px;
     }
 }
 
@@ -157,7 +157,7 @@ nav a:hover {
 @media screen and (min-width: 321px) and (max-width: 480px) {
     :root {
         --text-base: 15px;
-        --text-scale-ratio: 1.15;
+        --text-scale-ratio: 1.1;
     }
 
     .logo-container img {

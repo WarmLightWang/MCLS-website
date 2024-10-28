@@ -60,7 +60,7 @@
 }
 
 #aboutSection nav a {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     text-align: center;
     white-space: nowrap;
     color: purple;
