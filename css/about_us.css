@@ -64,6 +64,7 @@
     text-align: center;
     white-space: nowrap;
     color: purple;
+    font-size: calc(var(--nav-text) * 0.9);
 }
 
 .aboutUs_section {
