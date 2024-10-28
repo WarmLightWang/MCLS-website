@@ -34,22 +34,19 @@ header {
 
 .logo_language {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     align-items: center;
     justify-content: space-between;
 }
 .logo-container {
-    flex: 0 1 auto;
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
 }
 .logo-container img {
-    height: 60px;
+    height: 50px;
     width: auto;
-    max-width: 100%;
 }
 
 .text-animation {
@@ -81,17 +78,19 @@ header {
 
 nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: auto;;
+    justify-content: center;
+    align-items: center;
     padding: 10px 0;
     width: 100%;
+    gap: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
     padding: 8px 12px;
-    margin: 5px;
     cursor: pointer;
     font-weight: bold;
     font-size: var(--nav-text);
