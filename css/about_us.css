@@ -1,11 +1,10 @@
 /* About Us page specific styles */
 .slider {
-    position: relative;
     width: 100%;
     max-width: 1000px;
     height: 500px;
+    max-height: 800px;
     overflow: hidden;
-    background-color: #000;
     position: relative;
     aspect-ratio: 16/9;
     margin: 0 auto;

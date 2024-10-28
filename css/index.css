@@ -8,14 +8,13 @@ body {
     margin: 0px 30px;
     font-family: Arial, sans-serif;
     background-color: #F9F5EC;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    top: 0;
     background-color:#E9F5DB;
     z-index: 1000;
     padding: 20px;
@@ -40,7 +39,7 @@ header {
     height: fit-content;
     padding: 10px 0;
     color: #06b2f7;
-    font-size: 16px;
+    font-size: 18px;
     overflow: hidden;
 }
 @keyframes slideIn {
@@ -65,17 +64,17 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    padding: 5px 15px;
+    padding: 8px 12px;
     margin: 5px;
     cursor: pointer;
     font-weight: bold;
-    font-size: large;
+    font-size: 18px;
     white-space: nowrap;
 }
 
@@ -92,8 +91,8 @@ nav a:hover {
 }
 
 .section {
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
 }
 
 .about_section {
@@ -106,7 +105,7 @@ nav a:hover {
 .footer {
     color: black;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
     margin-top: auto;
 }
