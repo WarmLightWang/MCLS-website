@@ -52,19 +52,22 @@
     box-sizing: border-box;
 }
 #aboutSection nav {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     justify-content: center;
-    gap: 10px;
-    padding: 20px 0 10px;
+    gap: 15px;
+    padding: 20px 0 0;
+    width: 100%;
+    overflow-x: auto;
+    min-width: max-content;
 }
 
 #aboutSection nav a {
     flex: 0 0 auto;
-    text-align: center;
     white-space: nowrap;
     color: purple;
     font-size: calc(var(--nav-text) * 0.9);
+    font-weight: bold;
+    padding: 8px 12px;
 }
 
 .aboutUs_section {
