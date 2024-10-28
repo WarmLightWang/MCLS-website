@@ -48,12 +48,14 @@
 .slider-nav button:hover {
     transform: scale(1.2);
 }
-ul {
-    display: flex;
+
+#aboutSection ul a {
+    display: inline-flex;
     justify-content:space-evenly;
     padding: 20px 0;
     font-weight: bold;
     font-size: large;
+    color: purple;
 }
 
 .aboutUs_section {
