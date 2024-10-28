@@ -2,8 +2,6 @@
 .slider {
     width: 100%;
     max-width: 1000px;
-    height: 500px;
-    max-height: 800px;
     overflow: hidden;
     position: relative;
     aspect-ratio: 16/9;
@@ -48,12 +46,24 @@
 .slider-nav button:hover {
     transform: scale(1.2);
 }
-ul {
+
+#aboutSection {
+    width: 100%;
+    box-sizing: border-box;
+}
+#aboutSection nav {
     display: flex;
-    justify-content:space-evenly;
-    padding: 20px 0;
-    font-weight: bold;
-    font-size: large;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0 10px;
+}
+
+#aboutSection nav a {
+    flex: 0 1 auto;
+    text-align: center;
+    white-space: nowrap;
+    color: purple;
 }
 
 .aboutUs_section {
