@@ -1,10 +1,10 @@
 /* About Us page specific styles */
 .slider {
-    width: 100%;
-    overflow: hidden;
     position: relative;
-    aspect-ratio: 16/9;
-    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #000;
 }
 
 .slider-image {
@@ -48,28 +48,12 @@
 .slider-nav button:hover {
     transform: scale(1.2);
 }
-
-#aboutSection {
-    width: 100%;
-    box-sizing: border-box;
-}
-#aboutSection nav {
-    display: inline-flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px 0 0;
-    width: 100%;
-    overflow-x: auto;
-    min-width: max-content;
-}
-
-#aboutSection nav a {
-    flex: 0 0 auto;
-    white-space: nowrap;
-    color: purple;
-    font-size: calc(var(--nav-text) * 0.9);
+ul {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 20px 0;
     font-weight: bold;
-    padding: 8px 12px;
+    font-size: large;
 }
 
 .aboutUs_section {
