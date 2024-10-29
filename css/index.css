@@ -3,44 +3,52 @@ html, body{
     height: 100%;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, content, footer */
 }
 body {
-    margin: 0px 30px;
+    margin: 0px auto;
     font-family: Arial, sans-serif;
     background-color: #F9F5EC;
-    padding: 10px;
+    padding: clamp(5px, 1vw, 20px);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: min(95%, 1400px);
+    margin: 0 auto;
 }
 
 header {
-    top: 0;
     background-color:#E9F5DB;
     z-index: 1000;
-    padding: 20px;
+    padding: clamp(10px, 2vh, 30px);
     border-bottom: 1px solid #ccc;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    aspect-ratio: 8/1;
+    margin: 0 auto;
 }
 
 .logo_language {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: clamp(10px, 2vw, 30px);
+    padding-right: clamp(10px, 2vh, 30px);
+ 
 }
 .logo-container img {
-    height: 60px;
+    height: clamp(50px, 1.5vw, 80px);
     width: auto;
-    max-width: 100%;
 }
 
 .text-animation {
     animation: slideIn 16s linear infinite;
     white-space: nowrap; 
     height: fit-content;
-    padding: 10px 0;
     color: #06b2f7;
-    font-size: 16px;
+    font-size: clamp(15px, 1.5vw, 20px);
     overflow: hidden;
 }
 
@@ -66,18 +74,22 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 5px 0;
+    padding: clamp(5px, 1vh, 15px) 0;
+    gap: clamp(5px, 1vw, 20px);
+    justify-self: center;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    padding: 5px 10px;
+    font-size: clamp(14px, 1.5vw, 20px);
+    padding: clamp(5px, 1vw, 15px) 0;
     cursor: pointer;
     font-weight: bold;
     margin: 5px;
-    font-size: large;
     white-space: nowrap;
+    justify-self: center;
+ 
 }
 
 nav a:hover {
@@ -85,98 +97,34 @@ nav a:hover {
 }
 
 section {
-    display: none;
+    text-decoration: none;
     text-align: center;
-    padding: 10px;
+    font-size: clamp(14px, 1.5vw, 20px);
+    padding: clamp(5px, 1vw, 15px) 0;
     width: 100%;
     margin-top: auto;
 }
 
-.about_section {
-    display: block;
-}
+
 .content {
     flex: 1;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: clamp(10px, 2vh, 30px);
 }
 
 .footer {
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: clamp(10px, 2vh, 30px);
+    font-size: clamp(12px, 1.5vw, 18px);
     width: 100%;
     margin-top: auto;
 }
 
-/* Mobile devices */
-@media screen and (max-width: 480px) {
-    body {
-        margin: 0;
-        padding: 5px;
-    }
-    
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav a {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-        border-bottom: 1px solid #eee;
-    }
-    
-    .text-animation {
-        font-size: 18px;
-    }
-    
-    .slider {
-        aspect-ratio: 4/3;
-    }
-}
-
-/* Tablets */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    nav {
-        justify-content: center;
-        gap: 10px;
-    }
-    
-    nav a {
-        flex: 0 1 calc(50% - 20px);
-        text-align: center;
-    }
-    
-    .text-animation {
-        font-size: 20px;
-    }
-}
-
-/* Small laptops */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .content {
-        padding: 0 20px;
-    }
-    
-    nav a {
-        padding: 8px 15px;
-    }
-}
-
-/* Larger screens */
-@media screen and (min-width: 1025px) {
-    .content {
-        padding: 0 30px;
-    }
-}
-
-/* High DPI screens */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .logo-container img {
-        transform: scale(0.8);
-    }
-}
+/* Responsive typography */
+h1 { font-size: clamp(24px, 3vw, 48px); }
+h2 { font-size: clamp(20px, 2.5vw, 36px); }
+h3 { font-size: clamp(18px, 2vw, 28px); }
+p { font-size: clamp(14px, 1.5vw, 18px); }

@@ -1,8 +1,7 @@
 /* About Us page specific styles */
 .slider {
-    position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: min(1000px, 90vw);
     overflow: hidden;
     background-color: #000;
     position: relative;
@@ -50,12 +49,15 @@
 }
 
 #aboutSection ul a {
-    display: inline-flex;
-    justify-content:space-evenly;
-    padding: 20px 0;
+    text-decoration: none;
+    display: inline;
     font-weight: bold;
-    font-size: large;
+    font-size: clamp(14px, 1.5vw, 18px);
+    padding: clamp(5px, 1vw, 10px) clamp(0px, 1vw, 6px);
     color: purple;
+    white-space: nowrap;
+    justify-self: center;
+    margin: 5px 0;
 }
 
 .aboutUs_section {
@@ -64,20 +66,19 @@
 }
 
 .about_subtitle{
-    font-size:medium; 
+    font-size:clamp(14px, 1.5vw, 20px); 
     text-align:center;
     color:red;
     padding: 10px 0;
 }
 .policy_subtitle{
     color: red;
-    font-weight: bold;
+    font-weight: clamp(14px, 1.5vw, 20px);
 }
 .guidelines_subtitle{
     color: red;
-    font-weight: bold;
+    font-weight: clamp(14px, 1.5vw, 20px);
 }
-
 p a{
     color: blue;
 }
