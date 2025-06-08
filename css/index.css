@@ -50,7 +50,7 @@ header {
     height: fit-content;
     color: #06b2f7;
     font-size: clamp(15px, 1.5vw, 20px);
-    overflow: hidden;
+    overflow: visible;
 }
 
 @keyframes slideIn {
