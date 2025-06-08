@@ -66,7 +66,7 @@ header {
         opacity: 1;
     }
     100% {
-        transform: translateX(-100%); /* End off-screen to the left */
+        transform: translateX(-110%); /* End off-screen to the left */
         opacity: 1; /* Fade out */
     }
 }
