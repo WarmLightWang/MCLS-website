@@ -148,11 +148,11 @@ function initializeSlider() {
  async function loadAboutContent(contentId) {
     try {
         const contentFiles = {
-            'aboutUs': '../html/about/aboutUs.html',
-            'contactUs': '../html/about/contactUs.html',
-            'schoolPolicy': '../html/about/policy.html',
-            'guidelines': '../html/about/guidelines.html',
-            'teachers': '../html/about/teachers.html'
+            'aboutUs': '../html/subtitles/aboutUs.html',
+            'contactUs': '../html/subtitles/contactUs.html',
+            'schoolPolicy': '../html/subtitles/policy.html',
+            'guidelines': '../html/subtitles/guidelines.html',
+            'teachers': '../html/subtitles/teachers.html'
         };
 
         const contentMapping = {
