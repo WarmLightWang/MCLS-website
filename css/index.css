@@ -56,7 +56,7 @@ header {
 
 @keyframes slideIn {
     0% {
-        transform: translateX(100%); /* Start off-screen to the right */
+        transform: translateX(120%); /* Start off-screen to the right */
         opacity: 1; /* Start invisible */
     }
     10% {
@@ -67,7 +67,7 @@ header {
         opacity: 1;
     }
     100% {
-        transform: translateX(-110%); /* End off-screen to the left */
+        transform: translateX(-120%); /* End off-screen to the left */
         opacity: 1; /* Fade out */
     }
 }
